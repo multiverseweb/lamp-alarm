@@ -33,7 +33,7 @@ The purpose of our automatic night lamp and morning alarm project is to enhance 
 
 5. Personalization:
    - Customizable settings, such as alarm tones, night lamp brightness, and color, allow users to tailor the system to their preferences and create a personalized sleep environment.
-   - 
+    
 In short, the purpose of our automatic night lamp and morning alarm project is to create a holistic sleep and wake-up solution that prioritizes user comfort, health, and convenience while leveraging technology to enhance the overall sleeping experience.
 
 ### Components:
