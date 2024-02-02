@@ -1,6 +1,6 @@
 # Automatic Night Lamp & Alarm
 
-### Abstract
+## Abstract
 
 In an increasingly interconnected world, the quest for enhancing everyday convenience and energy efficiency has become paramount. This project, "Automatic Night Lamp with Morning Alarm," presents an innovative solution that seamlessly combines automation, lighting control, and wake-up functionality to improve daily living.
 The primary objective of this project is to design and implement a versatile device that can intelligently adapt to ambient lighting conditions during nighttime hours and, at the same time, serve as an effective alarm clock to gently awaken users in the morning. The system incorporates a combination of hardware and software components to achieve this dual functionality.
@@ -8,14 +8,14 @@ The core of the system utilises light sensors to detect changes in ambient light
 In addition to its nighttime lighting capabilities, the device also functions as a morning alarm. The system is designed with user-friendliness, featuring an intuitive control interface. 
 The "Automatic Night Lamp with Morning Alarm" project not only offers convenience and energy savings but also contributes to promoting healthier sleep patterns and overall well-being. This innovation has the potential to improve the quality of life for individuals by enhancing their daily routines while minimising energy consumption.
 
-### Automatic Night Lamp and Morning Alarm System using Microprocessor 8086
+## Automatic Night Lamp and Morning Alarm System using Microprocessor 8086
 
-#### Introduction
+### Introduction
 
 With the advent integrated circuits latest and modern microprocessors are available
 which works with a very high clock speed. But the 8085A Microprocessor is still the most popular microprocessor and widely used in higher education. It has simple architecture and adequate instruction set and works with a clock speed of 5 MHz. The beauty of this microprocessor is its logical and simple assembly language programming. We will develop a system that will automatically switch ON the lamp at night and give a morning alarm for some time and switch off the night bulb using 8085A microprocessor. The electronic circuit for glowing the night lamp and ringing the alarm at proper time was designed and interfaced with the 8085A microprocessor through a LDR (Light Dependent Resistor). The software for the same was prepared in the assembly language of the Microprocessor 8085. The simple logic of assembly language programming is very easy to understand rather it is self explanatory. 
 
-#### Purpose
+### Purpose
 
 The purpose of our automatic night lamp and morning alarm project is to enhance the sleep and wake-up experience for users by providing an intelligent and automated system for managing lighting conditions during nighttime and waking up in the morning. The project aims to address several key purposes:
 
@@ -36,7 +36,7 @@ The purpose of our automatic night lamp and morning alarm project is to enhance 
    - 
 In short, the purpose of our automatic night lamp and morning alarm project is to create a holistic sleep and wake-up solution that prioritizes user comfort, health, and convenience while leveraging technology to enhance the overall sleeping experience.
 
-#### Components:
+### Components:
 
 1. Microprocessor 8086: The central processing unit, executing instructions and managing the system's logic.
 
@@ -54,7 +54,7 @@ In short, the purpose of our automatic night lamp and morning alarm project is t
 
 8. Peripheral Interface Adapter (PIA): Acts as an interface between the microprocessor and RTC.
 
-#### Working Principle:
+### Working Principle:
 
 1. Light Sensing:
 
@@ -81,11 +81,11 @@ In short, the purpose of our automatic night lamp and morning alarm project is t
    - Input buttons allow users to set the current time and morning alarm time.
    - The LED display provides a visual representation of the current time.
 
-#### Software Flow / Algorithm:
+### Software Flow / Algorithm:
 
 Below is a high-level algorithm for the Automatic Night Lamp and Morning Alarm System using Microprocessor 8086. This algorithm provides a step-by-step guide for the main functionalities of the system:
 
-##### Algorithm: Automatic Night Lamp and Morning Alarm System
+#### Algorithm: Automatic Night Lamp and Morning Alarm System
 1. Initialize System:
    1.1 Set up Microprocessor 8086.
    1.2 Configure ports for input and output devices.
@@ -115,10 +115,10 @@ Below is a high-level algorithm for the Automatic Night Lamp and Morning Alarm S
 
 6. End Algorithm
 
-#### Flowchart
+### Flowchart
 This flowchart provides a basic structure for our project.
 ![Flowchart](coa.png)
-##### Explanation:
+#### Explanation:
 • Initialization: Set up the initial parameters, including the current time, date, and the desired alarm time.
 
 • Nighttime Check: Determine whether it is nighttime based on the current time. 
@@ -129,10 +129,10 @@ This flowchart provides a basic structure for our project.
 
 • End: Check if the project is finished or turned off. If it is, end the flowchart; otherwise, continue.
 
-#### Block Diagram
+### Block Diagram
 This block diagram provides a medium-level overview of the major components and their connections in your automatic night lamp and morning alarm project. 
 ![Block Diagram](coa_block_diagram.png)
-##### Explanation:
+#### Explanation:
 • Microprocessor (8085/8086): The central processing unit that controls and coordinates the entire system.
 
 • Night Lamp and Morning Alarm: Output devices that are controlled by the microprocessor. The night lamp is activated during nighttime, and the morning alarm is activated at the set time.
@@ -145,10 +145,10 @@ This block diagram provides a medium-level overview of the major components and 
 
 • Display (LED, LCD): Displays the current time, alarm time, and other relevant information.
 
-#### Code Snippets (Assembly Language for 8086):
+### Code Snippets (Assembly Language for 8086):
 Below is a simplified example in assembly language. This example assumes the use of an 8086 microprocessor. This simplified code includes subroutines for reading the light sensor, checking if it's nighttime, checking the alarm time, activating the night lamp, and handling user interface interactions. The program continuously loops, repeatedly checking these conditions. 
 
-### Conclusion:
+## Conclusion:
 
 The Automatic Night Lamp and Morning Alarm System leveraging the Microprocessor 8086 amalgamates cutting-edge technologies to offer a smart, user-centric solution. This project, with its meticulous integration of hardware components and intricate software algorithms, provides not only enhanced convenience in daily life but also opens doors to further innovations in the realm of home automation and intelligent systems. As the demand for smart living spaces grows, this project serves as a testament to the endless possibilities achievable through the synergy of microprocessors, sensors, and real-time clock mechanisms.
 
