@@ -131,7 +131,7 @@ This flowchart provides a basic structure for our project.
 
 #### Block Diagram
 This block diagram provides a medium-level overview of the major components and their connections in your automatic night lamp and morning alarm project. 
-
+![Block Diagram](coa_block_diagram.png)
 ##### Explanation:
 • Microprocessor (8085/8086): The central processing unit that controls and coordinates the entire system.
 
