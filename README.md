@@ -117,7 +117,7 @@ Below is a high-level algorithm for the Automatic Night Lamp and Morning Alarm S
 
 #### Flowchart
 This flowchart provides a basic structure for our project.
-
+![Flowchart](coa.png)
 ##### Explanation:
 • Initialization: Set up the initial parameters, including the current time, date, and the desired alarm time.
 
