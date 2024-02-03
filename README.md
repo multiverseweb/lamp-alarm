@@ -96,7 +96,7 @@ Below is a high-level algorithm for the Automatic Night Lamp and Morning Alarm S
    - 2.1 Continuously monitor the light sensor.
    - 2.2 Read the analog input from the light sensor.
    - 2.3 Compare the light level with a predefined threshold.
-  - 2.4 If light level is below the threshold, turn on the night lamp using the relay module.
+   - 2.4 If light level is below the threshold, turn on the night lamp using the relay module.
    - 2.5 If light level is above the threshold, turn off the night lamp.
 
 3. Real-Time Clock (RTC) Handling:
