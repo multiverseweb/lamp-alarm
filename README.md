@@ -87,31 +87,31 @@ Below is a high-level algorithm for the Automatic Night Lamp and Morning Alarm S
 
 #### Algorithm: Automatic Night Lamp and Morning Alarm System
 1. Initialize System:
-   1.1 Set up Microprocessor 8086.
-   1.2 Configure ports for input and output devices.
-   1.3 Initialize Real-Time Clock (RTC) with the current time.
-   1.4 Set the initial state of the night lamp and buzzer.
+   - 1.1 Set up Microprocessor 8086.
+   - 1.2 Configure ports for input and output devices.
+   - 1.3 Initialize Real-Time Clock (RTC) with the current time.
+   - 1.4 Set the initial state of the night lamp and buzzer.
 
 2. Main Loop:
-   2.1 Continuously monitor the light sensor.
-   2.2 Read the analog input from the light sensor.
-   2.3 Compare the light level with a predefined threshold.
-  2.4 If light level is below the threshold, turn on the night lamp using the relay module.
-   2.5 If light level is above the threshold, turn off the night lamp.
+   - 2.1 Continuously monitor the light sensor.
+   - 2.2 Read the analog input from the light sensor.
+   - 2.3 Compare the light level with a predefined threshold.
+  - 2.4 If light level is below the threshold, turn on the night lamp using the relay module.
+   - 2.5 If light level is above the threshold, turn off the night lamp.
 
 3. Real-Time Clock (RTC) Handling:
-   3.1 Read the current time from the RTC.
-   3.2 Update the LED display to show the current time.
+   - 3.1 Read the current time from the RTC.
+   - 3.2 Update the LED display to show the current time.
 
 4. Morning Alarm Check:
-   4.1 Read the set morning alarm time from user input.
-   4.2 Compare the current time from the RTC with the set alarm time.
-   4.3 If the alarm time is reached, activate the buzzer using the buzzer port.
+   - 4.1 Read the set morning alarm time from user input.
+   - 4.2 Compare the current time from the RTC with the set alarm time.
+   - 4.3 If the alarm time is reached, activate the buzzer using the buzzer port.
 
 5. User Interface:
-   5.1 Check for user input using input buttons.
-   5.2 Allow users to set the current time and morning alarm time.
-   5.3 Update the RTC and alarm settings based on user input.
+   - 5.1 Check for user input using input buttons.
+   - 5.2 Allow users to set the current time and morning alarm time.
+   - 5.3 Update the RTC and alarm settings based on user input.
 
 6. End Algorithm
 
