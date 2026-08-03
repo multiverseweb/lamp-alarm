@@ -132,6 +132,41 @@ This flowchart provides a basic structure for our project.
 ### Block Diagram
 This block diagram provides a medium-level overview of the major components and their connections in your automatic night lamp and morning alarm project. 
 ![Block Diagram](https://raw.githubusercontent.com/multiverseweb/lamp-alarm/main/coa_block_diagram.png)
+
+### System State Machine Diagram
+
+```mermaid
+stateDiagram-v2
+    [*] --> SystemInit: System Startup / RTC Init
+    
+    state SystemInit {
+        [*] --> ConfigPorts
+        ConfigPorts --> ReadSensors
+    }
+
+    SystemInit --> MainLoop: Init Complete
+
+    state MainLoop {
+        state "Light Assessment" as LightState {
+            [*] --> LDRRead: Check LDR Sensor
+            LDRRead --> LowLight: Lux < Threshold
+            LDRRead --> Daylight: Lux >= Threshold
+            LowLight --> LampON: Relay Close (Lamp ON)
+            Daylight --> LampOFF: Relay Open (Lamp OFF)
+        }
+
+        --
+
+        state "Alarm Assessment" as AlarmState {
+            [*] --> RTCTimeCheck: Read RTC Time
+            RTCTimeCheck --> AlarmMatch: RTC Time == Set Alarm Time
+            RTCTimeCheck --> NoMatch: RTC Time != Set Alarm Time
+            AlarmMatch --> BuzzerON: Trigger Buzzer Signal
+            NoMatch --> Standby: Standby Mode
+        }
+    }
+```
+
 #### Explanation:
 • Microprocessor (8085/8086): The central processing unit that controls and coordinates the entire system.
 
@@ -144,6 +179,20 @@ This block diagram provides a medium-level overview of the major components and 
 • Real-time Clock: Keeps track of the current time and date.
 
 • Display (LED, LCD): Displays the current time, alarm time, and other relevant information.
+
+## Installation & Simulation Setup
+
+### Python Controller Simulation (`lamp&alarm.py`)
+A Python simulation script is provided in the repository to simulate sensor polling, RTC comparison, and light relay output.
+
+```bash
+# Clone the repository
+git clone https://github.com/multiverseweb/lamp-alarm.git
+cd lamp-alarm
+
+# Run controller simulation
+python lamp&alarm.py
+```
 
 ### Code Snippets (Assembly Language for 8086):
 Below is a simplified example in assembly language. This example assumes the use of an 8086 microprocessor. 
