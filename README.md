@@ -117,7 +117,7 @@ Below is a high-level algorithm for the Automatic Night Lamp and Morning Alarm S
 
 ### Flowchart
 This flowchart provides a basic structure for our project.
-![Flowchart](https://raw.githubusercontent.com/multiverseweb/lamp-alarm/main/coa.png)
+![Flowchart](https://raw.githubusercontent.com/tjiuce/lamp-alarm/main/coa.png)
 #### Explanation:
 • Initialization: Set up the initial parameters, including the current time, date, and the desired alarm time.
 
@@ -131,7 +131,7 @@ This flowchart provides a basic structure for our project.
 
 ### Block Diagram
 This block diagram provides a medium-level overview of the major components and their connections in your automatic night lamp and morning alarm project. 
-![Block Diagram](https://raw.githubusercontent.com/multiverseweb/lamp-alarm/main/coa_block_diagram.png)
+![Block Diagram](https://raw.githubusercontent.com/tjiuce/lamp-alarm/main/coa_block_diagram.png)
 
 ### System State Machine Diagram
 
@@ -187,7 +187,7 @@ A Python simulation script is provided in the repository to simulate sensor poll
 
 ```bash
 # Clone the repository
-git clone https://github.com/multiverseweb/lamp-alarm.git
+git clone https://github.com/tjiuce/lamp-alarm.git
 cd lamp-alarm
 
 # Run controller simulation
